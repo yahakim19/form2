@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 import { Router } from  "@angular/router";
 import { AuthService } from '../auth.service';
+import { LoginPage } from '../login/login.page';
+
+
+
+
 
 @Component({
   selector: 'app-register',
@@ -9,6 +14,7 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
+  
 
   constructor(private  authService:  AuthService, private  router:  Router) { }
 
@@ -20,5 +26,8 @@ export class RegisterPage implements OnInit {
       this.router.navigateByUrl('login');
     });
   }
+
+ 
+
 
 }
